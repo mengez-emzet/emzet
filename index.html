@@ -46,7 +46,7 @@
       --accent: #f3f3f1;
       --accent-contrast: #0a0a0a;
     }
-    /* ===== RESET & BASE ===== */
+    
     * { margin:0; padding:0; box-sizing:border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -55,6 +55,7 @@
       color: var(--text-primary);
       line-height:1.6;
       transition: background 0.3s, color 0.3s;
+      overflow-x: hidden;
     }
     body.no-scroll { overflow:hidden; }
     a { color:inherit; text-decoration:none; }
@@ -425,8 +426,8 @@
   <div class="nav-overlay" id="navOverlay"></div>
 
 <main>
-  <!-- HERO -->
-  <section id="home">
+  
+  <section id="home"
     <div class="container hero">
       <div class="hero-content reveal from-left">
         <div class="hero-badge"><i class="fas fa-code"></i> Junior Full-Stack Developer</div>
@@ -446,8 +447,7 @@
       </div>
     </div>
   </section>
-
-  <!-- SKILLS -->
+  
   <section id="skills" style="background:var(--bg-secondary);">
     <div class="container">
       <h2 class="section-title reveal from-top">Software Development Skills</h2>
@@ -464,7 +464,7 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
+
   <section id="services" style="background:var(--bg-primary);">
     <div class="container">
       <h2 class="section-title reveal from-top">What I Offer</h2>
@@ -481,7 +481,7 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+
   <section id="projects">
     <div class="container">
       <h2 class="section-title reveal from-top">Featured projects</h2>
